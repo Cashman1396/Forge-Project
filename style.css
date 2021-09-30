@@ -1,12 +1,14 @@
-
-
-/*
-a {
-    color: white;
-}
-
+/* 
+Theme: Forge
 */
 
+@font-face {
+  font-family: industry;
+  font-display: swap;
+  src: url("/fonts/industry-bold-webfont.woff2") format("woff2"),
+       url("/fonts/industry-bold-webfont.woff") format("woff");
+
+}
 
 .home {
     border-radius: 10px;
@@ -30,25 +32,769 @@ a, a:hover, button, button:hover {
 }
 
 .forge-nav {
-    position:fixed;
-    width: 100vw;
-    height: 70px;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 80px;
     background-color: black;
+    z-index: 3;
 }
 
-.forge-logo {
+.nav-logo {
     position: absolute;
     padding-left: 10%;
-    padding-top: 0.7%;
+    padding-top: 1%;
+   
 
 }
 
 .ham {
     margin-left: 75%;
-    margin-top: 1.5%;
+    margin-top: -0.6%;
+}
+
+/* front-page */
+
+.banner {
+    height:500px;
+    background: linear-gradient(90deg, rgba(252,179,31,1) 65%, rgba(0,0,0,1) 65%);
+}
+
+.forge-name {
+    
+    padding-top: 10%;
+    padding-left: 20%;
+}
+
+.mobileForge {
+  display: none;
+}
+
+.banner-arrow {
+    padding-top: 0%;
+    padding-left: 58%;
+
+}
+
+.black-text {
+    position: absolute;
+    line-height: 70%;
+    padding-top: 100px;
+    padding-left: 70%;
+    color: #FCB31F;
+    font-size: 42px;
+    font-weight: bold;
+    text-align: left;
+    overflow-wrap:break-word;
+}
+
+.tab-black-text {
+  display: none;
 }
 
 
+
+.ban-line {
+    padding-left: 0;
+    width: 65%;
+    border-bottom: 5px solid white;
+}
+
+.ban-button {
+    font-weight: bold;
+    position:absolute;
+    padding-top: 22%;
+    padding-left: 70%;
+}
+
+.talk {
+  font-family: industry, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.tab-arrow {
+  display: none;
+}
+
+/* creative section */
+
+.section-create {
+    height: 550px;
+    background-color: #FCB31F ;
+}
+
+.create-border {
+  position: relative;
+  padding-top: 6%;
+  padding-left: 15%;
+
+}
+
+
+.section-text {
+  position: absolute;
+  font-family: industry, sans-serif;
+  font-weight: bold;
+  font-size: 72px;
+  padding-left: 20%;
+  padding-top: 9%;
+  line-height: 75%;
+
+}
+
+.excerpt {
+  position: absolute;
+  padding-left: 60%;
+  padding-top: 10%;
+}
+
+.tabExcerpt {
+  display: none;
+}
+
+.tabBorder {
+  display: none;
+}
+
+.mobileBorder {
+  display: none;
+}
+
+/* Forge Section */
+
+
+
+.brand-forge {
+  height: 1000px;
+  background: black;
+}
+
+.forge-text {
+  font-weight: bold;
+  font-size: 32px;
+  color: white;
+  padding-left: 5%;
+  padding-top: 5%;
+  
+} 
+
+.brand-line {
+  font-size: 62px;
+  font-weight: bold;
+  color: #FCB31F;
+  line-height: 100%;
+  padding-left: 5%;
+}
+
+.forge-agile {
+  color:white;
+  font-size: 20px;
+  padding-left: 5%;
+  padding-top: 3%
+}
+
+.mobileAgile {
+  display: none;
+}
+
+.forge-vertical {
+  border-left: solid white 3px;
+  color: white;
+  font-size: 36px;
+  margin-left: 50%;
+}
+
+.verticalText {
+  padding-left: 30px;
+  font-weight: bold;
+}
+
+.forgeEagle {
+  border-top: white 5px solid;
+  width:17%;
+  margin-left: 30px;
+}
+
+.giantEagle {
+  font-family: industry, sans-serif;
+  padding-left: 30px;
+  
+}
+
+.name {
+  font-weight: bold;
+}
+
+.principles {
+  background: linear-gradient(90deg, rgba(0,0,0,1) 75%, rgba(252,179,31,1) 75%);
+  height: 750px;
+}
+
+.princeForge {
+  position: absolute;
+  color: #FCB31F;
+  font-family: industry, sans-serif;
+  font-size: 52px;
+  font-weight: bold;
+  padding-left: 5%;
+  padding-top: 5%
+}
+
+.mobilePrinceForge {
+  display: none;
+}
+
+.princeDesign {
+  position: absolute;
+  line-height: 16px;
+  color: #fff;
+  font-size: 20px;
+  padding-left: 40%;
+  padding-top: 7%;  
+}
+
+.mobPrinceDesign {
+  display: none;
+}
+
+.infuse {
+  position: absolute;
+  padding-top: 30%;
+  padding-left: 6%;
+}
+
+.infuse h6 {
+  color: white;
+  font-size: 22px;
+}
+
+.infuse p {
+  color:#fff;
+  font-size: 16px;
+  line-height: 18px;
+  padding-top: 4%;
+}
+
+.tabInfuse {
+  display: none;
+}
+
+.integrate {
+  position: absolute;
+  padding-left: 22%;
+  padding-top: 30%;
+}
+
+.integrate h6 {
+  color: white;
+  font-size: 22px;
+}
+
+.integrate p {
+  color:#fff;
+  font-size: 16px;
+  line-height: 18px;
+  padding-top: 4%;
+
+}
+
+.tabIntegrate {
+  display: none;
+}
+
+.strategy {
+  position: absolute;
+  padding-top: 30%;
+  padding-left: 35%;
+}
+
+.strategy h6 {
+  color: white;
+  font-size: 22px;
+}
+
+.strategy p {
+  color:#fff;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.tabStrategy {
+  display: none;
+}
+.designFocus {
+  position: absolute;
+  padding-top: 30%;
+  padding-left: 48%;
+}
+
+.designFocus h6 {
+  color: white;
+  font-size: 22px;
+}
+
+.designFocus p {
+  color:#fff;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.tabDesign {
+  display: none;
+}
+
+.central {
+  position: absolute;
+  padding-top: 30%;
+  padding-left: 62%;
+}
+
+.central h6 {
+  color: white;
+  font-size: 22px;
+}
+
+.central p {
+  color:#fff;
+  font-size: 16px;
+  line-height: 18px;
+  
+}
+.tabCentral {
+  display: none;
+}
+
+.efficient {
+  position: absolute;
+  padding-top: 30%;
+  padding-left: 78%;
+
+}
+
+.efficient h6 {
+  color: white;
+  font-size: 22px;
+}
+
+.efficient p {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.tabEfficient {
+  display: none;
+}
+
+.Switcher {
+  display: none;
+}
+
+
+.your-class {
+  padding-top: 40%;
+  padding-left: 30%;
+}
+
+.slick-next {
+  padding-top: 80%;
+  right: 10%;
+  height: 100px;
+}
+
+.slick-prev{
+  left:4%;
+  padding-top: 80%;
+}
+
+.single-item {
+  color:white;
+  padding-left: 45%;
+  display:none;
+}
+
+/* Tools Section */
+
+.forgeTools {
+  height: 600px;
+  background: linear-gradient(90deg, rgba(252,179,31,1) 54%, rgba(231,219,208,1) 54%);
+}
+
+.forgeTools-white {
+  
+  width: 28px;
+  margin-left: 54%;
+  height: 331px;
+  background-color: white;
+  padding-left: 54%;
+}
+
+.toolsArrow {
+  padding-left: 50%;
+  padding-top: 11.8%;
+  position: absolute;
+  z-index: 1;
+}
+
+.toolsName {
+  position: absolute;
+  padding-top: 5%;
+  padding-left: 11%
+}
+
+.mobileName {
+  display: none;
+}
+
+.toolsText {
+  position: absolute;
+  padding-top: 29%;
+  padding-left: 8%;
+  line-height: 20px;
+  font-size: 20px;
+}
+
+.tabToolsText {
+  display: none;
+}
+
+.mobileToolsText {
+  display: none;
+}
+
+.toolsPrivate {
+  position: absolute;
+  padding-left: 65%;
+  padding-top: 4%;
+ 
+  
+}
+
+.toolsPrivate h4{
+  font-size: 32px;
+}
+
+.toolsLine {
+  width: 60%;
+  border-bottom: 5px solid #FCB31F;
+  
+}
+
+.privateWord {
+  font-size: 20px;
+  line-height: 18px;
+}
+
+.tabPrivateWord {
+  display: none;
+}
+
+.mobilePrivateWord {
+  display: none;
+}
+
+.toolsNational {
+  position: absolute;
+  padding-left: 65%;
+  padding-top: 26%;
+}
+
+.nationalLine {
+  width: 60%;
+  border-bottom: 5px solid #FCB31F;
+}
+
+.nationalWord {
+  font-size: 20px;
+  line-height: 18px;
+}
+
+.tabNationalWord {
+  display: none;
+}
+
+.tabToolsNational {
+  display: none;
+}
+
+.mobileArrowOne {
+  display: none;
+}
+
+.mobileArrowTwo {
+  display: none;
+}
+
+/* Partnerships Section */
+
+.partner {
+  background: linear-gradient(180deg, rgba(0,0,0,1) 44%, rgba(252,179,31,1) 44%);
+  height: 1000px;
+}
+
+.partnerWhite {
+  position: absolute;
+  background-color: white;
+  height: 800px;
+  width: 90%;
+  margin-left: 4%;
+  margin-top: 5%;
+  z-index: 1;
+}
+
+.partnerHead {
+  position: absolute;
+  padding-left: 5%;
+  padding-top: 3%;
+}
+
+.partnerHead h3 {
+  font-family: industry, sans-serif;
+  font-weight: bold;
+  font-size: 62px;
+  line-height: 52px;
+}
+
+.partnerWords {
+  position: absolute;
+  font-size: 20px;
+  line-height: 18px;
+  padding-top: 3%;
+  padding-left: 65%;
+}
+
+.tabPartWords {
+  display: none;
+}
+
+.mobilePartWords {
+  display: none;
+}
+
+.partnerYellow {
+  background-color: #FCB31F;
+  height: 600px;
+}
+
+.partnerVertical {
+  position: absolute;
+  border-left: solid black 3px;
+  color: black;
+  font-size: 36px;
+  padding-left: 1%;
+  margin-left: 8%;
+  height: 83%;
+  
+}
+
+.partnerLoyal {
+  line-height: 38px;
+  font-weight: bold;
+  font-size: 42px;
+}
+
+.tabLoyal {
+  display: none;
+  line-height: 38px;
+  font-weight: bold;
+  font-size: 42px;
+
+}
+
+.mobileLoyal {
+  display: none;
+}
+
+.Vice {
+  position: absolute;
+  font-family: industry, sans-serif;
+  font-size: 24px;
+  padding-top: 18%;
+
+}
+
+.tabVice {
+  display: none;
+}
+
+.mobileVice {
+  display: none;
+}
+
+.viceLine {
+  position: absolute;
+  width:17%;
+  margin-top: 15%;
+  border-top: black 5px solid;
+}
+
+
+.viceBold {
+  font-weight: bold;
+}
+
+
+/* Cases */
+
+.firstCase {
+  position: absolute;
+  z-index: 20;
+  padding-top: 25%;
+  padding-left: 6%;
+  
+}
+
+.firstSpan {
+  font-family: industry;
+}
+
+.secondCase {
+  position: absolute;
+  padding-top: 25%;
+  padding-left: 29%;
+  z-index: 12;
+}
+
+.secondSpan {
+  font-family: industry, sans-serif;
+}
+
+
+.thirdCase {
+  padding-top: 25%;
+  position: absolute;
+  padding-left: 55%;
+  z-index: 11;
+}
+
+.fourthCase {
+  position: absolute;
+  padding-top: 25%;
+  padding-left: 80%;
+  z-index: 10;
+}
+
+.fifthCase {
+  position: absolute;
+  padding-left: 6%;
+  padding-top: 50%;
+  z-index: 10;
+}
+
+.sixthCase {
+  position: absolute;
+  padding-top: 50%;
+  padding-left: 29%;
+  z-index: 9;
+}
+
+.seventhCase {
+  position: absolute;
+  padding-left: 55%;
+  padding-top: 50%;
+  
+}
+
+.eighthCase{
+   position: absolute;
+   padding-top: 50%;
+   padding-left: 80%
+}
+
+.ninthCase {
+  position: absolute;
+  padding-left: 80%;
+  padding-top: 35%;
+}
+
+
+/* Contact Section */
+
+.Contact {
+  background-color: black;
+  height: 800px;
+}
+
+.contactTalk {
+  position: absolute;
+  margin-top: 17%;
+  margin-left: 5%;
+}
+
+.mobileTalk {
+  display: none;
+}
+
+.endForge {
+  padding-left: 48%;
+  padding-top: 7%;
+}
+
+.forgeAhead {
+  position: absolute;
+  font-size: 62px;
+  color: white;
+  line-height:65px;
+}
+
+.touchBtn {
+  position: absolute;
+  padding-left: 48%;
+  padding-top: 22%;
+} 
+
+.toddFont {
+  font-family: industry, sans-serif;
+  font-size: 24px;
+}
+
+.Todd {
+  line-height: 18px;
+  padding-top: 35%;
+  padding-left: 48%;
+}
+
+.toddColor {
+  color: white;
+}
+
+.toddBold {
+  font-weight: bold;
+}
+
+.email {
+  font-size: 18px;
+}
+
+.contactForge {
+  position: absolute;
+  padding-left: 73%;
+  padding-top: 41%;
+}
+
+.tabContactForge{
+  display: none;
+}
+
+.mobileContactForge {
+  display: none;
+}
+
+.footerText {
+  padding-left: 8%;
+  padding-top: 1%;
+}
+
+
+.footerBar {
+  background-color: #FCB31F;
+  width: 100%;
+  height: 55px;
+}
+
+
+/* Hamburger Icon */
 
 #menuToggle
 {
@@ -82,8 +828,9 @@ a, a:hover, button, button:hover {
   display: block;
   width: 40px;
   height: 32px;
+  position: relative;
   
-  top: -7px;
+  top: 30px;
   left: -5px;
   
   cursor: pointer;
@@ -164,7 +911,7 @@ a, a:hover, button, button:hover {
   width: 300px;
   margin: -100px 0 0 -50px;
   padding: 50px;
-  padding-top: 125px;
+  padding-top: 75px;
   
 
   list-style-type: none;
@@ -189,4 +936,1526 @@ a, a:hover, button, button:hover {
 #menuToggle input:checked ~ ul
 {
   transform: none;
+}
+
+/* buttons */
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+
+
+
+/* 1 */
+.btn-1 {
+  width: 180px;
+  background: #FCB31F;
+  background: linear-gradient(180deg, rgba(252,179,31,1) 84%, rgba(0,0,0,1) 100%);
+  border: none;
+}
+.btn-1:hover {
+  background: black;
+  background: linear-gradient(0deg, rgba(168,116,12,1) 0%, rgba(0,0,0,1) 30%);
+}
+
+
+/* 2 */
+.btn-2 {
+  background: #FCB31F;
+  width: 180px;
+  border: none;
+  color:black
+  
+}
+.btn-2:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-2:hover {
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+
+
+
+
+/* 3 */
+.btn-3 {
+  background: #FCB31F;
+  width: 180px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  
+}
+.btn-3 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-3:before,
+.btn-3:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+   background: black;
+  transition: all 0.3s ease;
+}
+.btn-3:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-3:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3:hover{
+   background: transparent;
+  box-shadow: none;
+}
+.btn-3:hover:before {
+  height: 100%;
+}
+.btn-3:hover:after {
+  width: 100%;
+}
+.btn-3 span:hover{
+   color: black;
+}
+.btn-3 span:before,
+.btn-3 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+   background: black;
+  transition: all 0.3s ease;
+}
+.btn-3 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-3 span:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3 span:hover:before {
+  height: 100%;
+}
+.btn-3 span:hover:after {
+  width: 100%;
+}
+
+
+/* 5 */
+.btn-5 {
+  width: 180px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  background: black;
+
+}
+.btn-5:hover {
+  color: black;
+  background: transparent;
+   box-shadow:none;
+}
+.btn-5:before,
+.btn-5:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: black;
+  box-shadow:
+   -1px -1px 5px 0px #fff,
+   7px 7px 20px 0px #0003,
+   4px 4px 5px 0px #0002;
+  transition:400ms ease all;
+}
+.btn-5:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.btn-5:hover:before,
+.btn-5:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+
+/* 6 */
+.btn-6 {
+  background: #FCB31F;
+background: radial-gradient(circle, rgba(247,150,192,1) 0%, rgba(118,174,241,1) 100%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  width: 180px;
+}
+.btn-6 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-6:before,
+.btn-6:after {
+  position: absolute;
+  content: "";
+  height: 0%;
+  width: 1px;
+ box-shadow:
+   -1px -1px 20px 0px rgba(255,255,255,1),
+   -4px -4px 5px 0px rgba(255,255,255,1),
+   7px 7px 20px 0px rgba(0,0,0,.4),
+   4px 4px 5px 0px rgba(0,0,0,.3);
+}
+.btn-6:before {
+  right: 0;
+  top: 0;
+  transition: all 500ms ease;
+}
+.btn-6:after {
+  left: 0;
+  bottom: 0;
+  transition: all 500ms ease;
+}
+.btn-6:hover{
+  background: transparent;
+  color: #76aef1;
+  box-shadow: none;
+}
+.btn-6:hover:before {
+  transition: all 500ms ease;
+  height: 100%;
+}
+.btn-6:hover:after {
+  transition: all 500ms ease;
+  height: 100%;
+}
+.btn-6 span:before,
+.btn-6 span:after {
+  position: absolute;
+  content: "";
+  box-shadow:
+   -1px -1px 20px 0px rgba(255,255,255,1),
+   -4px -4px 5px 0px rgba(255,255,255,1),
+   7px 7px 20px 0px rgba(0,0,0,.4),
+   4px 4px 5px 0px rgba(0,0,0,.3);
+}
+.btn-6 span:before {
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: .5px;
+  transition: all 500ms ease;
+}
+.btn-6 span:after {
+  right: 0;
+  bottom: 0;
+  width: 0%;
+  height: .5px;
+  transition: all 500ms ease;
+}
+.btn-6 span:hover:before {
+  width: 100%;
+}
+.btn-6 span:hover:after {
+  width: 100%;
+}
+
+
+/* 9 */
+.btn-9 {
+  border: none;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  width: 180px;
+}
+.btn-9:after {
+  position: absolute;
+  content: " ";
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+   background-color: black;
+
+  transition: all 0.3s ease;
+}
+.btn-9:hover {
+  background: transparent;
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  color: #fff;
+}
+.btn-9:hover:after {
+  -webkit-transform: scale(2) rotate(180deg);
+  transform: scale(2) rotate(180deg);
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+}
+
+
+/* 11 */
+.btn-11 {
+  border: none;
+  background: rgb(251,33,117);
+    background: linear-gradient(0deg, rgba(251,33,117,1) 0%, rgba(234,76,137,1) 100%);
+    color: #fff;
+    overflow: hidden;
+}
+.btn-11:hover {
+    text-decoration: none;
+    color: #fff;
+}
+.btn-11:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    animation: shiny-btn1 3s ease-in-out infinite;
+}
+.btn-11:hover{
+  opacity: .7;
+}
+.btn-11:active{
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+
+
+
+
+
+
+
+/* 12 */
+.btn-12{
+  position: relative;
+  right: 20px;
+  bottom: 20px;
+  border:none;
+  box-shadow: none;
+  width: 180px;
+  height: 40px;
+  line-height: 42px;
+  -webkit-perspective: 230px;
+  perspective: 230px;
+}
+.btn-12 span {
+  background: #FCB31F;
+  display: block;
+  position: absolute;
+  width: 180px;
+  height: 40px;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  border-radius: 5px;
+  margin:0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.btn-12 span:nth-child(1) {
+  box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+.btn-12 span:nth-child(2) {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+.btn-12:hover span:nth-child(1) {
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+.btn-12:hover span:nth-child(2) {
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+ color: transparent;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+
+
+/* 13 */
+.btn-13 {
+  width: 180px;
+  background-color: #89d8d3;
+background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+  border: none;
+  z-index: 1;
+}
+.btn-13:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 5px;
+   background-color: #4dccc6;
+background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+  box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+}
+.btn-13:hover {
+  color: #fff;
+}
+.btn-13:hover:after {
+  top: 0;
+  height: 100%;
+}
+.btn-13:active {
+  top: 2px;
+}
+
+
+
+
+/* 14 */
+.btn-14 {
+  width: 180px;
+  background: #FCB31F;
+  border: none;
+  z-index: 1;
+}
+.btn-14:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 5px;
+  background-color: black;
+  
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  transition: all 0.3s ease;
+}
+.btn-14:hover {
+  color: white;
+}
+.btn-14:hover:after {
+  top: auto;
+  bottom: 0;
+  height: 100%;
+}
+.btn-14:active {
+  top: 2px;
+}
+
+  
+
+/* 15 */
+.btn-15 {
+    background: #FCB31F;
+    border: none;
+    z-index: 0;
+    width: 260px;
+    color:black;
+  }
+  .btn-15:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #E7DBD0;
+    border-radius: 5px;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+  }
+  .btn-15:hover {
+    color: rgb(0, 0, 0);
+  }
+  .btn-15:hover:after {
+    left: 0;
+    width: 100%;
+  }
+  .btn-15:active {
+    top: 2px;
+  }
+  
+  
+/* 16 */
+.btn-16 {
+  background: #FCB31F;
+  width: 180px;
+  border: none;
+  color: #000;
+}
+.btn-16:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+}
+.btn-16:hover {
+  color: #000;
+}
+.btn-16:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+.btn-16:active {
+  top: 2px;
+}
+
+
+/* media queries Tablet */
+
+@media only screen  and (max-width: 1024px)  {
+
+  .banner {
+    height: 100vw;
+    background: linear-gradient(180deg, rgba(252,179,31,1) 50%, rgba(0,0,0,1) 50%);
+  }
+  
+  .forge-name {
+    padding-top: 12%;
+    padding-left: 25%;
+  }
+  
+  .mobileForge {
+    display: none;
+  }
+
+  .black-text {
+    display: none;
+  }
+
+  .tab-black-text {
+    position: absolute;
+    text-align: center;
+    padding-top: 60%;
+    padding-left: 28%;
+    display: block;
+    line-height: 70%;
+    color: #FCB31F;
+    font-size: 42px;
+    font-weight: bold;
+
+  }
+
+
+  .banner-arrow {
+    display: none;
+  }
+
+  .ban-line {
+    margin: auto;
+    margin-bottom: 10px;
+    width: 85%;
+  }
+
+  .ban-button {
+    z-index: 11;
+    padding-top: 85%;
+    padding-left: 38%;
+  }
+  
+  .tab-arrow {
+    display: block;
+    position: absolute;
+    padding-top: 98%;
+    padding-left: 90%;
+  }
+
+  .section-create {
+    height: 650px;
+  }
+
+  .section-text {
+    position: absolute;
+    padding-top: 15%;
+    padding-left: 25%;
+  }
+
+  .create-border {
+    display: none;
+
+  }
+  
+
+  .tabBorder {
+    display: block;
+    position: absolute;
+    padding-left: 13%;
+    padding-top: 5%;
+  }
+
+  .mobileBorder {
+    display: none;
+  }
+
+  .excerpt {
+    display: none;
+  }
+
+  .tabExcerpt {
+    position: absolute;
+    display: block;
+    padding-top: 45%;
+    padding-left: 25%;
+  }
+
+  .forge-vertical {
+    margin-left: 5%;
+  }
+
+  .princeForge {
+    color:white;
+  }
+
+  .mobilePrinceForge {
+    display: none;
+  }
+
+  .princeDesign {
+    padding-left: 56%;
+    padding-top: 7%;
+  }
+  .tabPrince {
+    background-color: black;
+    height: 520px;
+  }
+
+  .infuse-para {
+    display: none;
+  }
+
+  .tabInfuse {
+    display: block;
+  }
+
+  .integrate {
+    padding-left: 45%;
+    
+  }
+
+  .integrate-para {
+    display: none;
+  }
+
+  .tabIntegrate {
+    display: block;
+  }
+
+  .strategy {
+    padding-left: 78%;
+  }
+
+  .strategy-para {
+    display: none;
+  }
+  
+  .tabStrategy {
+    display: block;
+    line-height: 18px;
+  }
+
+
+  .designFocus {
+    padding-left: 5%;
+    padding-top: 56%;
+  }
+
+  .design-para {
+    display: none;
+  }
+
+  .tabDesign {
+    display: block;
+  }
+
+  .central {
+    padding-top: 56%;
+    padding-left: 45%;
+  }
+
+  .central-para {
+    display: none;
+  }
+
+  .tabCentral {
+    display: block;
+    line-height: 18px;
+  }
+
+  .efficient {
+    padding-top: 56%;
+  }
+
+  .efficient-para {
+    display: none;
+  }
+
+  .tabEfficient {
+    display: block;
+    line-height: 18px;
+  }
+
+  .Switcher {
+    display: none;
+  }
+  /* Tools Section */
+
+  .forgeTools {
+    background: linear-gradient(180deg, rgba(252,179,31,1) 54%, rgba(231,219,208,1) 54%);
+    height: 950px;
+  }
+
+  .forgeTools-white {
+    margin-left: 0%;
+    position: absolute;
+    margin-top: 53%;
+    height: 438px;
+  }
+
+  .toolsArrow {
+    padding-left: 152px;
+    margin-left: 46%;
+    margin-top: 250px;
+    transform: rotate(90deg); 
+}
+
+.toolsName {
+  padding-top: 4%;
+  padding-left: 5%;
+}
+
+.mobileName {
+  display: none;
+}
+
+.toolsPrivate {
+  position: absolute;
+  padding-left: 6%;
+  padding-top: 67%;
+  z-index: 1;
+}
+
+.toolsWord {
+  display: none;
+}
+
+.toolsText {
+  display: none;
+}
+
+.tabToolsText {
+  position: absolute;
+  display: block;
+  font-size: 18px;
+  line-height: 18px;
+  padding-top: 44%;
+  padding-left: 5%;
+}
+
+.mobileToolsText {
+  display: none;
+}
+
+.tabtoolsWord {
+  display: block;
+  line-height: 20px;
+  font-size: 18px;
+  padding-top: 5%;
+}
+
+.mobileToolsWord {
+  display: none;
+}
+
+/* National CSS */
+
+.toolsNational {
+  padding-top: 70%;
+  padding-left: 60%;
+  position: absolute;
+}
+
+.tabToolsNational {
+  display: block;
+
+}
+
+.headerNation {
+  display: none;
+}
+
+.nationalWord {
+  display: none;
+}
+
+.tabNationalWord {
+  display: block;
+  font-size: 18px;
+  padding-top: 5%;
+  line-height: 20px;
+}
+
+.mobileArrowOne {
+  display: none;
+}
+
+.mobileArrowTwo {
+  display: none;
+}
+
+/* Partner Tablet Section */
+
+.partner {
+  height: 1300px;
+}
+
+.partnerHead {
+  padding-left: 8%;
+}
+
+.partnerHead h3 {
+  font-size: 72px;
+}
+
+.partnerWords {
+  display: none;
+}
+
+.tabPartWords {
+  position: absolute;
+  display: block;
+  padding-top: 25%;
+  padding-left: 8%;
+}
+
+.mobilePartWords {
+  display: none;
+}
+
+.partnerLoyal {
+  display: none;
+}
+
+.tabLoyal {
+  display: block;
+  
+  padding-top: 0%;
+}
+
+.mobileLoyal {
+  display: none;
+}
+
+.partnerVertical {
+  padding-top: 0%;
+  height: 115%;
+  margin-left: 5%;
+
+} 
+
+.partnerWhite {
+  height: 1550px;
+  margin-left: 6%;
+  
+}
+
+.partnerYellow {
+  padding-top: 35%;
+  height: 950px;
+}
+
+.Vice {
+  display: none;
+}
+
+.viceLine {
+  margin-top: 7%;
+}
+
+.tabVice {
+  display: block;
+  font-family: industry, sans-serif;
+  font-size: 24px;
+  padding-top: 7%;
+} 
+
+.mobileVice {
+  display: none;
+}
+
+
+/* Cases */ 
+
+.firstCase {
+  padding-top: 60%;
+  padding-left: 25%;
+
+}
+
+.secondCase {
+  padding-top: 60%;
+  padding-left: 55%
+
+}
+
+.thirdCase {
+  padding-top: 95%;
+  padding-left: 25%
+}
+
+.fourthCase {
+  padding-left: 55%;
+  padding-top: 95%;
+}
+
+.fifthCase {
+  padding-left: 25%;
+  padding-top: 135%
+}
+
+.sixthCase {
+  padding-top: 135%;
+  padding-left: 55%
+}
+
+.seventhCase {
+  padding-left: 25%;
+  padding-top: 165%
+
+}
+
+.eighthCase {
+  padding-left: 55%;
+  padding-top: 165%;
+}
+
+
+.ninthCase {
+  padding-top: 50%;
+  padding-left: 60%;
+}
+
+.btn-9 {
+  background: #FCB31F;
+}
+
+/* Ending Section */
+
+.contactTalk {
+  padding-top: 9%;
+}
+.forgeAhead {
+  font-size: 38px;
+  line-height: 32px;
+  padding-left: 10%;
+  padding-top: 10%;
+}
+
+.touchBtn {
+  padding-left: 58%;
+  padding-top: 32%;
+}
+
+.Todd {
+ padding-top: 55%;
+ padding-left: 55%
+}
+
+.tabContactForge {
+  position: absolute;
+  display: block;
+  padding-top: 63%;
+  padding-left: 78%;
+}
+ 
+.contactForge {
+  display: none;
+}
+
+
+
+}
+
+
+@media only screen  and (max-width: 768px) {
+  .nav-logo {
+    padding-left: 1%;
+  }
+
+  .ham {
+    padding-left: 20%;
+  }
+  
+  .forge-name {
+    display: none;
+  }
+
+  .mobileForge {
+    display: block;
+    position: absolute;
+    padding-top: 25%;
+    padding-left: 30%
+  }
+  .tab-arrow {
+    display: none;
+  }
+
+  .tabBorder {
+    display: none;
+  }
+
+  .mobileBorder {
+    display:block;
+    margin-left: 15%;
+    padding-top: 5%;
+  }
+
+  .section-text {
+    font-size: 38px;
+
+  }
+
+  .black-text {
+    font-size: 26px;
+    
+    text-align: center;
+    padding-top: 60%;
+    padding-left: 28%;
+    display: block;
+    line-height: 70%;
+    color: #FCB31F;
+    font-weight: bold;
+  }
+
+  .tab-black-text {
+    display: none;
+  }
+
+  .btn-15 {
+    width: 100%;
+  }
+
+  .ban-button {
+    padding-left: 31%;
+  }
+
+  .section-create {
+    height: 530px;
+  }
+
+
+  .tabExcerpt {
+    display: none;
+  }
+
+  .excerpt {
+    position: absolute;
+    display:block;
+    font-size: 16px;
+    padding-left: 20%;
+    padding-top: 50%;
+  }
+
+  /* Mobile Forge */
+
+  .brand-forge {
+    height: 890px;
+  }
+
+  .forge-text {
+    font-size: 22px;
+    padding-left: 10%;
+  }
+
+  .brand-line {
+    font-size: 32px;
+    padding-left: 10%;
+  }
+
+  .forge-agile {
+    display: none;
+  }
+
+  .mobileAgile {
+    display: block;
+    color:white;
+    font-size: 20px;
+    padding-left: 10%;
+    padding-top: 3%
+
+  }
+
+  .forge-vertical {
+    margin-left: 10%;
+    height: 430px;
+  }
+
+  .verticalText {
+    font-size: 32px;
+  }
+
+  .giantEagle {
+    font-size: 24px;
+  }
+
+  /* Principles */
+
+  .princeForge {
+    display: none;
+  }
+
+  .tabPrince {
+    height: 550%;
+  }
+
+  .princeDesign {
+    display: none;
+  }
+
+  .mobPrinceDesign {
+    display: block;
+    position: absolute;
+    line-height: 16px;
+    color: #fff;
+    font-size: 20px;
+    padding-left: 9%;
+    padding-top: 40%;
+  }
+
+
+
+
+
+  .mobilePrinceForge {
+    display: block;
+    color:white;
+    position: absolute;
+    font-size: 50px;
+    font-family: industry, sans-serif;
+    font-weight: bold;
+    padding-top: 5%;
+    padding-left: 10%;
+    line-height: 40px;
+  }
+
+  .Switcher {
+    display: block;
+    color:white;
+    padding-left: 30%;
+    padding-top: 90%;
+  }
+
+  .mobileInfuse {
+    position: relative;
+    display: block;
+    text-align: center;
+    padding-right: 40%;
+  }
+
+  .mobileInfuse p {
+    font-size: 16px;
+  }
+
+
+  .mobileIntegrate {
+    display: block;
+    text-align: center;
+    padding-right: 40%;
+  }
+
+  .mobileIntegrate img {
+    padding-left: 35%;
+  }
+
+  .mobileStrategy {
+    display: block;
+    text-align: center;
+    padding-right: 40%;
+  }
+
+  .mobileStrategy img {
+    padding-left: 35%;
+  }
+
+  .mobileDesignFocus {
+    display: block;
+    text-align: center;
+    padding-right: 40%;
+  }
+
+  .mobileDesignFocus img {
+    padding-left: 35%;
+  }
+
+  .mobileCentral {
+    display: block;
+    text-align: center;
+    padding-right: 40%;
+  }
+
+  .mobileCentral img {
+    padding-left: 35%;
+  }
+
+  .mobileEfficient {
+    display: block;
+    text-align: center;
+    padding-right: 40%;
+  }
+
+  .mobileEfficient img {
+    padding-left: 35%;
+  }
+
+  .infuse {
+    display: none
+  }
+
+  .integrate {
+    display: none;
+  }
+
+  .strategy{
+    display: none;
+  }
+
+  .designFocus {
+    display: none;
+  }
+
+  .central {
+    display: none;
+  }
+
+  .efficient {
+    display: none;
+  }
+
+  /* Tools Section */
+
+  .forgeTools {
+    height: 1100px;
+  }
+  
+  .toolsName {
+    display:  none;
+  }
+
+  .mobileName {
+    display: block;
+    padding-left: 18%;
+    padding-top: 10%;
+  }
+
+  .toolsText {
+    display: none;
+  }
+
+  .tabToolsText {
+    display: none;
+  }
+
+  .mobileToolsText {
+    display: block;
+    padding-top: 10%;
+    padding-left: 20%;
+  }
+
+  .forgeTools-white {
+    margin-top: 15%;
+    height: 300px;
+    width: 100%;
+  }
+
+  .toolsPrivate {
+    padding-top: 25%;
+  }
+
+  .toolsWord {
+    display: none;
+  }
+
+  .tabToolsWords {
+    display: none;
+  }
+
+  .mobileToolsWord {
+      display: block;
+  }
+
+  .toolsArrow {
+    display: none;
+  }
+
+  .mobileArrowOne {
+    display: block;
+    position: absolute;
+    padding-top: 55%;
+    padding-left: 35%;
+    z-index: 1;
+  }
+
+  .mobileArrowTwo {
+    display: block;
+    position: absolute;
+    padding-top: 74%;
+    padding-left: 35%;
+    z-index: 1;
+   
+
+  }
+
+  .toolsNational {
+    padding-left: 7%;
+    padding-top: 90%;
+    z-index: 1;
+  }
+
+  .partner {
+    height: 1280px;
+  }
+
+  .partnerWhite {
+    height: 1200px;
+  }
+
+  .partnerYellow {
+    height: 630px;
+    padding-top: 0%;
+  }
+
+  .partnerHead h3 {
+    font-size:  48px;
+    line-height: 38px;
+  }
+
+  .partnerWords {
+    display: none;
+  }
+
+  .tabPartWords {
+    display: none;
+  }
+
+  .mobilePartWords {
+    position: absolute;
+    display: block;
+    padding-top: 38%;
+    padding-left: 8%;
+  }
+
+  .firstCase {
+    padding-top: 105%;
+    padding-left: 8%;
+  }
+
+  .secondCase {
+    padding-top: 105%;
+    padding-left: 53%;
+  }
+
+  .thirdCase {
+    padding-top: 155%;
+    padding-left: 8%;
+  }
+  
+  .fourthCase {
+    padding-top: 155%;
+    padding-left: 53%;
+  }
+
+  .fifthCase {
+    padding-top: 205%;
+    padding-left: 8%;
+  }
+
+  .sixthCase {
+    padding-top: 205%;
+    padding-left: 53%;
+  }
+
+  .seventhCase {
+    padding-top: 255%;
+    padding-left: 8%;
+  }
+
+  .eighthCase {
+    padding-top: 255%;
+    padding-left: 53%;
+  }
+
+  .partnerLoyal {
+    display: none;
+  }
+
+  .tabLoyal {
+    display: none;
+  }
+
+  .mobileLoyal {
+    display: block;
+    line-height: 24px;
+    font-weight: bold;
+    font-size: 32px;
+  }
+  
+  .partnerVertical {
+    
+    height: 110%;
+  }
+
+  .Vice {
+    display: none;
+  }
+
+  .tabVice {
+    display: none;
+    padding-top: 15%;
+    font-size: 26px;
+    line-height: 22px;
+  } 
+
+  .mobileVice {
+    font-family: industry;
+    display: block;
+    padding-top: 15%;
+    font-size: 26px;
+    line-height: 22px;
+  }
+
+  .ninthCase {
+    padding-top: 110%;
+    padding-left: 8%;
+  }
+
+  /* Contact Section */
+
+  .Contact {
+    height: 700px;
+  }
+
+  .contactTalk {
+    display: none;
+  }
+  
+  .endForge {
+    padding-left: 0;
+  }
+
+  .touchBtn {
+    padding-left: 8%;
+    padding-top: 45%;
+  }
+
+  .mobileTalk {
+    position: absolute;
+    display:block;
+    padding-top: 102%;
+    padding-left: 8%;
+  } 
+
+  .Todd {
+    padding-top: 65%;
+    padding-left: 8%
+  }
+
+  .tabContactForge {
+    display: none;
+  }
+
+  .mobileContactForge {
+    display: block;
+    position: absolute;
+    padding-top: 120%;
+    padding-left: 70%;
+  }
+
+  
+ 
+
 }
